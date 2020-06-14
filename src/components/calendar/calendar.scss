@@ -1,0 +1,50 @@
+.react-datepicker{
+  display: inline-flex;
+  flex-shrink: 0;
+  position: relative;
+
+  &__navigation{
+    position: absolute;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+
+    &--previous{
+      right: 0
+    }
+  }
+
+  &__current-month{
+    padding: 0 30px;
+    text-align: center;
+  }
+ 
+  &__day-names{
+    display: flex;
+  }
+
+  &__day-name{
+    width: 20px;
+    padding: 5px;
+  }
+
+  &__week{
+    display: flex;
+  }
+
+  &__day{
+    width: 20px;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+
+    &--selected {
+      background-color: lightblue
+    }
+
+    &--outside-month{
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}

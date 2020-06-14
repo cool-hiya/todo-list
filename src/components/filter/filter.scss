@@ -1,0 +1,9 @@
+.filter{
+  cursor: pointer;
+
+  &._active{
+    color: blue;
+    font-weight: bold;
+  }
+}
+
